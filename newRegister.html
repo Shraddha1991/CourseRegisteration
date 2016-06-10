@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/validate.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/validate.css">
+	<title>Form Validation</title>
+</head>
+<body>
+	<h1>SignUp Information</h1>
+	<form class="signup" action="registration.php" method="post">
+		<table>
+		<tr>
+				<td><label for="firstname">First Name:</label></td>
+				<td><input type="text" name="firstname" id="firstname"></td>
+			</tr>
+			<tr>
+				<td><label for="lastname">Last Name:</label></td>
+				<td><input type="text" name="lastname" id="lastname"></td>
+			</tr>
+			<tr>
+				<td><label for="department">Department Name:</label></td>
+				<td><input list="departments" name="department">
+					<datalist id="departments">
+					<option value="CS-Computer Science">
+					<option value="MECH-Mechanical"></option>
+					<option value="EE-Electrical">
+					<option value="AR-Arts">
+					<option value="HH-Humanities">
+					</datalist></td>
+			</tr>
+			<tr>
+				<td><label for="username">NETID:</label></td>
+				<td><input type="text" name="username" id="username"></td>
+			</tr>
+			<tr>
+				<td><label for="password">Password:</label></td>
+				<td><input type="password" name="password" id="password"></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="text" name="email" id="email"></td>
+			</tr>
+		</table>
+		<p><input type="submit" /></p>
+	</form>
+
+</body>
+</html>

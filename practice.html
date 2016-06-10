@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-1.9.1.min.js"></script>
+	<!script src="js/valid.js"><!/script>
+	<script src="js/valid2.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/valid.css">		
+    <title>Password Verification</title>
+	<div id="header"> 
+	Course Registration 
+	
+	 
+	 </div>;
+</head>
+<body>
+    <div id="container">
+        <h1>User Registration</h1>
+<form id="signup" action="registration.php" method="post">
+    <ul>
+        <li>
+            <label for="firstname">First name:</label>
+            <span><input id="firstname" name="firstname" type="text" /></span>
+        </li>
+		<li>
+            <label for="lastname">Last name:</label>
+            <span><input id="lastname" name="lastname" type="text" /></span>
+        </li>
+		<li>
+            <label for="department">Department:</label>
+            <span><input id="department" list="departments" name="department">
+					<datalist id="departments">
+					<option value="1">CS-Computer Science</option>
+					<option value="2">MECH-Mechanical</option>
+					<option value="3">EE-Electrical</option>
+					<option value="4">Arts and Humanities</option>
+					</datalist></span>
+        </li>
+		<li>
+            <label for="username">NetID:</label>
+            <span><input id="username" name="username" type="text" /></span><span class="redbold" id="user-result"></span>
+        </li>
+        <li>
+            <label for="pswd">Password:</label>
+            <span><input id="pswd" type="password" name="pswd" /></span>
+        </li>
+		
+		<li>
+            <label for="email">Email:</label>
+            <span><input id="email" name="email" type="text" /></span></span><span class="redbold" id="email-result"></span>
+        </li>
+        <li>
+            <input type="submit" id="button" value="Register">
+        </li>
+    </ul>
+</form>
+    </div>
+	
+	<div id="pswd_info">
+    <h4>Password must meet the following requirements:</h4>
+    <ul>
+        <li id="letter" class="invalid">At least <strong>one letter</strong></li>
+        <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+        <li id="number" class="invalid">At least <strong>one number</strong></li>
+        <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+		<li id="character" class="invalid">Must contain atleast <strong>one special character _\-!\"@;,.:</strong></li>
+    </ul>
+</div>
+</body>
+</html>
