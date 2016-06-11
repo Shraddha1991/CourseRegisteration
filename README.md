@@ -5,6 +5,10 @@ The project was to create an Online Course Registeration system. PHP was used as
 
 
 
+User can use login.html to sign in to the system 
+
+
+
 
 
 
